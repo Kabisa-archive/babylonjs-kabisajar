@@ -145,7 +145,7 @@
 				// Attach the light1 object to the camera so moving te camera also moves the light
 				// This makes sure the object looks like it's being turned instead of the camera
 				light1.parent = camera;
-				
+
 				// Create the basic model which consists of two cylinders
 				// The bottom of the vase
 				var cylinder = BABYLON.Mesh.CreateCylinder("cylinder", 0.3, 4.4, 4.4, 50, 1, scene, false);
@@ -157,7 +157,7 @@
 
 				// The decal is used to print the Kabisa logo on the vase
 				var decalMaterial = new BABYLON.StandardMaterial("decalMat", scene);
-				decalMaterial.diffuseTexture = new BABYLON.Texture("/textures/kabisa.png", scene);
+				decalMaterial.diffuseTexture = new BABYLON.Texture("textures/kabisa.png", scene);
 				decalMaterial.diffuseTexture.hasAlpha = true;
 				decalMaterial.zOffset = -2;
 

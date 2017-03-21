@@ -1,0 +1,30 @@
+	Exporter version: 4.6.1, Blender version: 2.78 (sub 0)
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used:
+		selected layers only:  false
+		flat shading entire scene:  false
+		inline textures:  false
+		texture directory:  /Users/jonny/Desktop/BabylonJS/
+	Python World class constructor completed
+	processing begun of camera (FreeCamera):  Camera 3/4
+	WARNING: The following object (type - CURVE) is not currently exportable thus ignored: Curve.000
+	processing begun of node:  Empty-Depth
+	processing begun of mesh:  Plane.003
+		processing begun of baked material:  Plane.003
+			Cycles baking texture, type: DIFFUSE_COLOR, mapped using: UVTex
+========= An error was encountered =========
+  File "/Users/jonny/Library/Application Support/Blender/2.78/scripts/addons/io_export_babylon.py", line 330, in execute
+    mesh = Mesh(object, scene, nextStartFace, forcedParent, nameID, self)
+  File "/Users/jonny/Library/Application Support/Blender/2.78/scripts/addons/io_export_babylon.py", line 787, in __init__
+    bakedMat = BakedMaterial(exporter, object, recipe)
+  File "/Users/jonny/Library/Application Support/Blender/2.78/scripts/addons/io_export_babylon.py", line 2135, in __init__
+    self.bake('diffuseTexture', 'DIFFUSE_COLOR', 'TEXTURE', image, mesh, uvName, exporter, recipe)
+  File "/Users/jonny/Library/Application Support/Blender/2.78/scripts/addons/io_export_babylon.py", line 2167, in bake
+    self.bakeCycles(cycles_type, image, uvName, recipe.nodeTrees)
+  File "/Users/jonny/Library/Application Support/Blender/2.78/scripts/addons/io_export_babylon.py", line 2215, in bakeCycles
+    bpy.ops.object.bake(type = bake_type, use_clear = True, margin = 5, use_selected_to_active = False)
+  File "/Applications/blender.app/Contents/MacOS/../Resources/2.78/scripts/modules/bpy/ops.py", line 189, in __call__
+    ret = op_call(self.idname_py(), None, kw)
+ERROR:  Converting py args to operator properties:  enum "DIFFUSE_COLOR" not found in ('COMBINED', 'AO', 'SHADOW', 'NORMAL', 'UV', 'EMIT', 'ENVIRONMENT', 'DIFFUSE', 'GLOSSY', 'TRANSMISSION', 'SUBSURFACE')
+========= end of processing =========
+elapsed time:  0 min, 1.1449 secs

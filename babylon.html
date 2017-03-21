@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>BabylonJS example</title>
+		<style>
+			body {
+				padding : 0;
+				margin: 0;
+				font: 10pt Arial;
+			}
+
+			canvas {
+				outline: none;
+			}
+
+			.container {
+				width: auto;
+				margin: 20px;
+				border: 1px solid #ddd;
+				background: #fff;
+				padding: 10px;
+				border-radius: 5px;
+				box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+			}
+			.style-choice {
+				width: 50%;
+				float: right;
+			}
+			#product-details {
+				width: 50%;
+				float: left; 
+			}
+		</style>
+		<script src="babylon.custom.js"></script>
+		<script src="jquery-3.1.1.min.js"></script>
+		<script src="kabisa.plugin.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Kabisa Jar</h1>
+			<p>The Kabisa Jar is a one of a kind collectors item. You can add as many balls as you like.</p>
+			<div class="style-choice">
+				<strong>Add a ball</strong>
+				<ul id="add-a-ball">
+					<li>Gold</li>
+					<li>Red</li>
+					<li>Silver</li>
+					<li>Cookie</li>
+				</ul>
+			</div>
+
+			<div id="product-detail">
+						
+			</div>
+		</div>
+		<script>
+
+			$(window).ready(function() {
+				var plugin = $('#product-detail').kabisaMugPreview();
+			});
+
+		</script>
+
+	</body>
+
+</html>

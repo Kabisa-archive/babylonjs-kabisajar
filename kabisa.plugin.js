@@ -126,9 +126,6 @@
 				// Make sure the camera has the desired position
 				scene.activeCamera.setPosition(new BABYLON.Vector3(7.24, 4.02, 5.59));
 
-				// Attach the light1 object to the camera so moving te camera also moves the light
-				// This makes sure the object looks like it's being turned instead of the camera
-				light1.parent = camera;
 
 				// Enable the gravity and collisions
 				scene.gravity = new BABYLON.Vector3(0, -9.81, 0);
@@ -145,6 +142,10 @@
 				light1.specular = new BABYLON.Color3(0.3, 0.3, 0.3);
 				light1.groundColor = new BABYLON.Color3(0, 0, 0);
 
+				// Attach the light1 object to the camera so moving te camera also moves the light
+				// This makes sure the object looks like it's being turned instead of the camera
+				light1.parent = camera;
+				
 				// Create the basic model which consists of two cylinders
 				// The bottom of the vase
 				var cylinder = BABYLON.Mesh.CreateCylinder("cylinder", 0.3, 4.4, 4.4, 50, 1, scene, false);
